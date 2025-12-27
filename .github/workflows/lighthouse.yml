@@ -16,5 +16,5 @@ jobs:
         with:
           urls: |
             https://nakamuramudancas.com.br
-          uploadArtifacts: true
+          uploadArtifacts: false
           temporaryPublicStorage: true
