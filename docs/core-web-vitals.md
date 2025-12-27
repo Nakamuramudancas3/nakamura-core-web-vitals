@@ -79,3 +79,19 @@ Este processo garante:
 - Evidência objetiva de performance
 - Alinhamento com boas práticas do Google
 
+---
+
+## 📡 Dados de Campo (CrUX)
+
+Além das análises de laboratório (Lighthouse),
+este projeto utiliza dados reais de usuários
+provenientes do Chrome UX Report (CrUX).
+
+Esses dados são acessados por meio do
+PageSpeed Insights, ferramenta oficial do Google.
+
+URL analisada:
+https://nakamuramudancas.com.br
+
+Fonte:
+https://pagespeed.web.dev/analysis/https-nakamuramudancas-com-br
