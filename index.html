@@ -2,19 +2,58 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Nakamura – Core Web Vitals</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel Core Web Vitals</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      padding: 30px;
+    }
+    h1 {
+      color: #222;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    a {
+      text-decoration: none;
+      color: #0056b3;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align:center; padding:40px">
+<body>
 
-  <h1>📊 Core Web Vitals</h1>
-  <p>Relatórios oficiais Lighthouse + CrUX</p>
+<h1>📊 Painel de Performance — Core Web Vitals</h1>
 
-  <p>
-    <a href="reports/dashboard/" style="font-size:18px">
-      👉 Acessar Dashboard
-    </a>
-  </p>
+<div class="card">
+  <h2>📁 Relatórios Lighthouse</h2>
+  <a href="../index.html">Abrir relatórios</a>
+</div>
+
+<div class="card">
+  <h2>⏱️ Antes × Depois</h2>
+  <a href="../antes/">Antes</a><br>
+  <a href="../depois/">Depois</a>
+</div>
+
+<div class="card">
+  <h2>📈 PageSpeed Insights</h2>
+  <a href="https://pagespeed.web.dev/analysis/https-nakamuramudancas-com-br" target="_blank">
+    Ver PageSpeed
+  </a>
+</div>
 
 </body>
 </html>
+<div class="card">
+  <h2>📡 Dados Reais (CrUX)</h2>
+  <p>Experiência real de usuários do Chrome.</p>
+  <a href="https://pagespeed.web.dev/analysis/https-nakamuramudancas-com-br" target="_blank">
+    Ver dados CrUX
+  </a>
+</div>
