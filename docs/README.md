@@ -22,7 +22,7 @@ diretrizes oficiais do **Google Lighthouse** e **Core Web Vitals**.
 
 ## 📚 Documentação Técnica
 
-- 📘 [Core Web Vitals](core-web-vitals.md)
+- 📘 core-web-vitals.md
 - 📐 Metodologia Lighthouse
 - ✅ Checklist de Performance
 
