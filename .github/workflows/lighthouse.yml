@@ -1,4 +1,4 @@
-name: Lighthouse CI
+name: Lighthouse Audit
 
 on:
   workflow_dispatch:
@@ -11,10 +11,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run Lighthouse
-        uses: treosh/lighthouse-ci-action@v10
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          urls: |
-            https://nakamuramudancas.com.br
-          uploadArtifacts: false
-          temporaryPublicStorage: true
+          node-version: 20
+
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+
+      - name: Run Lighthouse (Mobile)
+        run: |
+          lighthouse https://nakamuramudancas.com.br \
+            --preset=mobile \
+            --output=html \
+            --output-path=mobile.html
+
+      - name: Run Lighthouse (Desktop)
+        run: |
+          lighthouse https://nakamuramudancas.com.br \
+            --preset=desktop \
+            --output=html \
+            --output-path=desktop.html
