@@ -35,3 +35,5 @@ Garantir:
 - SEO técnico
 - Experiência do usuário
 - Conformidade com Google PageSpeed
+- ![Core Web Vitals](https://img.shields.io/badge/Core%20Web%20Vitals-PASS-brightgreen)
+
